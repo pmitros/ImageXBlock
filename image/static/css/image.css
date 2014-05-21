@@ -1,9 +1,9 @@
-/* CSS for AudioXBlock */
+/* CSS for ImageXBlock */
 
-.audio_block .count {
+.image_block .count {
     font-weight: bold;
 }
 
-.audio_block p {
+.image_block p {
     cursor: pointer;
 }

@@ -1,4 +1,4 @@
-"""Setup for audio XBlock."""
+"""Setup for image XBlock."""
 
 import os
 from setuptools import setup
@@ -15,19 +15,19 @@ def package_data(pkg, root):
 
 
 setup(
-    name='audio-xblock',
+    name='image-xblock',
     version='0.1',
-    description='audio XBlock',   # TODO: write a better description.
+    description='image XBlock',   # TODO: write a better description.
     packages=[
-        'audio',
+        'image',
     ],
     install_requires=[
         'XBlock',
     ],
     entry_points={
         'xblock.v1': [
-            'audio = audio:AudioXBlock',
+            'image = image:ImageXBlock',
         ]
     },
-    package_data=package_data("audio", "static"),
+    package_data=package_data("image", "static"),
 )

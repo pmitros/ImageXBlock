@@ -1,9 +1,11 @@
-AudioXBlock
+ImageXBlock
 ===========
 
-This is a simple XBlock which will play audio files as an HTML5 audio
-element. If unavailable, it will fall back to an embed element.
+This is a simple XBlock which will show an image as an HTML5 image
+element. 
 
 Usage: 
 
-    <audio src="http://server.tld/static/song.mp3" />
+    <image src="http://server.tld/static/song.png" />
+
+Why do we need this? We really don't, but it's convenient and semantic. 

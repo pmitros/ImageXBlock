@@ -1,1 +1,1 @@
-from .audio import AudioXBlock
+from .image import ImageXBlock

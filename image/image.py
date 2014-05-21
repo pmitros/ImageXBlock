@@ -7,9 +7,9 @@ from xblock.fields import Scope, Integer, String
 from xblock.fragment import Fragment
 
 
-class AudioXBlock(XBlock):
+class ImageXBlock(XBlock):
     """
-    This XBlock will play an MP3 file as an HTML5 audio element. 
+    This XBlock will play an MP3 file as an HTML5 image element. 
     """
 
     # Fields are defined on the class.  You can access them in your code as
@@ -27,16 +27,16 @@ class AudioXBlock(XBlock):
     # TO-DO: change this view to display your data your own way.
     def student_view(self, context=None):
         """
-        The primary view of the AudioXBlock, shown to students
+        The primary view of the ImageXBlock, shown to students
         when viewing courses.
         """
-        html = self.resource_string("static/html/audio.html")
+        html = self.resource_string("static/html/image.html")
         print self.src
         print html.format
         frag = Fragment(html.format(src = self.src))
-        frag.add_css(self.resource_string("static/css/audio.css"))
-        frag.add_javascript(self.resource_string("static/js/src/audio.js"))
-        frag.initialize_js('AudioXBlock')
+        frag.add_css(self.resource_string("static/css/image.css"))
+        frag.add_javascript(self.resource_string("static/js/src/image.js"))
+        frag.initialize_js('ImageXBlock')
         print self.xml_text_content()
         return frag
 
@@ -46,11 +46,11 @@ class AudioXBlock(XBlock):
     def workbench_scenarios():
         """A canned scenario for display in the workbench."""
         return [
-            ("AudioXBlock",
+            ("ImageXBlock",
              """<vertical_demo>
-                  <audio src="http://localhost/Ikea.mp3"> </audio>
-                  <audio src="http://localhost/skull.mp3"> </audio>
-                  <audio src="http://localhost/monkey.mp3"> </audio>
+                  <image src="http://localhost/Ikea.mp3"> </image>
+                  <image src="http://localhost/skull.mp3"> </image>
+                  <image src="http://localhost/monkey.mp3"> </image>
                 </vertical_demo>
              """),
         ]
