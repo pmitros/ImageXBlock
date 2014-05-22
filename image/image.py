@@ -48,9 +48,11 @@ class ImageXBlock(XBlock):
         return [
             ("ImageXBlock",
              """<vertical_demo>
-                  <image src="http://localhost/Ikea.mp3"> </image>
-                  <image src="http://localhost/skull.mp3"> </image>
-                  <image src="http://localhost/monkey.mp3"> </image>
+                  <image src="http://i.imgur.com/I9FFFO3.jpg"> </image>
+                  <image src="http://i.imgur.com/aFDg6aO.jpg"> </image>
+                  <image src="http://i.imgur.com/gdtNpq8.jpg"> </image>
+                  <image src="http://i.imgur.com/ruSUPZA.jpg"> </image>
+                  <image src="http://i.imgur.com/QYQo31Y.jpg"> </image>
                 </vertical_demo>
              """),
         ]
